@@ -967,6 +967,10 @@ TEST(TestIRHitachiAc424Class, SetAndGetPower) {
   EXPECT_TRUE(ac.getPower());
   ac.off();
   EXPECT_FALSE(ac.getPower());
+  ac.on();
+  EXPECT_EQ(0xF1, ac.getRaw()[27]);
+  ac.off();
+  EXPECT_EQ(0xE1, ac.getRaw()[27]);
   ac.setPower(true);
   EXPECT_TRUE(ac.getPower());
   ac.setPower(false);
