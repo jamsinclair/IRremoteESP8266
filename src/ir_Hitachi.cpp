@@ -547,6 +547,8 @@ void IRHitachiAc424::stateReset(void) {
   remote_state[49] = 0xFF;
   remote_state[51] = 0xFF;
 
+  remote_state[kHitachiAc424PowerByte]  = kHitachiAc424PowerOn;
+
   setTemp(23);
   setPower(true);
   setMode(kHitachiAc424Cool);

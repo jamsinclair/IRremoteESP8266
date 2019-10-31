@@ -66,6 +66,7 @@ const uint8_t kHitachiAc424FanMaxDry = 2;
 // Byte[27]
 const uint8_t kHitachiAc424PowerByte = 27;
 const uint8_t kHitachiAc424PowerOffset = 4;
+const uint8_t kHitachiAc424PowerOn = 241;
 
 // Classes
 class IRHitachiAc {
